@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Render Reviews - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background: url('background.jpg') no-repeat center center/cover;
@@ -23,9 +23,11 @@
             text-decoration: none;
             padding: 15px 20px;
             display: inline-block;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
             background-color: #575757;
+            transform: scale(1.05);
         }
         .container {
             width: 80%;
@@ -33,6 +35,24 @@
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             box-shadow: 0px 0px 10px gray;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -47,6 +67,11 @@
         <h1>Welcome to Render Reviews</h1>
         <p>At <strong>Render Reviews</strong>, we provide detailed reviews of GPUs, discussing their specifications, pros, and ideal use cases.</p>
         <p>Explore our <strong>List of GPUs</strong> to find the best fit for your needs and check out our <strong>Comparisons</strong> to see how they compete against each other.</p>
+        <a href="gpus.html" class="btn">Explore GPUs</a>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Render Reviews. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
