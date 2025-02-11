@@ -1,0 +1,52 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+nav {
+    background: #333;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #575757;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+}
+.gpu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.gpu-card {
+    background: #1e1e1e;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0px 0px 10px gray;
+    text-align: left;
+    border-radius: 10px;
+}
+.gpu-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.gpu-card h2 {
+    text-align: center;
+}
