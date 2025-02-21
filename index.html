@@ -7,17 +7,42 @@
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav>
         <a href="index.html">Home</a>
         <a href="gpus.html">List of GPUs</a>
         <a href="comparison.html">Comparisons</a>
     </nav>
 
+    <!-- Main Content -->
     <div class="container">
         <h1>Welcome to Render Reviews</h1>
-        <p>At <strong>Render Reviews</strong>, we provide detailed reviews of GPUs, discussing their specifications, pros, and ideal use cases.</p>
-        <p>Explore our <strong>List of GPUs</strong> to find the best fit for your needs and check out our <strong>Comparisons</strong> to see how they compete against each other.</p>
+        <p>At <strong class="highlight">Render Reviews</strong>, we provide detailed reviews of GPUs, discussing their specifications, pros, and ideal use cases.</p>
+        <p>Explore our <strong class="highlight">List of GPUs</strong> to find the best fit for your needs and check out our <strong class="highlight">Comparisons</strong> to see how they compete against each other.</p>
 
-        <img src="rndr.jpg" alt="Render Reviews Logo" class="main-image"> </div>
+        <!-- Floating Image Example -->
+        <img src="rndr.jpg" alt="Render Reviews Logo" class="main-image float-left">
+
+        <p>This image will float to the left, and the text will wrap around it. It demonstrates how the float property works with images in CSS.</p>
+
+        <!-- Flexbox Example: Box layout for showcasing categories or related content -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>GPU Reviews</h2>
+                <p>In-depth reviews of the latest GPUs, with performance benchmarks and user feedback.</p>
+            </div>
+            <div class="flex-item">
+                <h2>Specifications</h2>
+                <p>Explore detailed specifications for each GPU, including clock speed, VRAM, and more.</p>
+            </div>
+            <div class="flex-item">
+                <h2>Usage Scenarios</h2>
+                <p>Find the perfect GPU for gaming, video rendering, and more based on your needs.</p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
