@@ -4,51 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Render Reviews - GPU List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: white;
-            text-align: center;
-        }
-        nav {
-            background: #333;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: inline-block;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        .gpu-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .gpu-card {
-            background: #1e1e1e;
-            padding: 15px;
-            width: 300px;
-            box-shadow: 0px 0px 10px gray;
-            text-align: left;
-            border-radius: 10px;
-        }
-        .gpu-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .gpu-card h2 {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="testscript.js" defer></script>
 </head>
 <body>
     <nav>
@@ -58,58 +15,26 @@
     </nav>
 
     <h1>List of GPUs</h1>
-    <p>Here are some of the best GPUs along with their specifications and advantages:</p>
+    <p id="firsttest">Here are some of the best GPUs along with their specifications and advantages:</p>
 
     <div class="gpu-container">
-        <div class="gpu-card">
+        <div class="gpu-card" id="buttontest">
             <img src="gpu1.jpg" alt="RTX 4090">
             <h2>RTX 4090</h2>
             <p><strong>Specs:</strong> 24GB GDDR6X, Ray Tracing, DLSS 3</p>
             <p><strong>Pros:</strong> Best for high-end gaming & rendering.</p>
         </div>
-        <div class="gpu-card">
+        <div class="gpu-card" id="secondtest">
             <img src="gpu2.jpg" alt="RTX 4080">
             <h2>RTX 4080</h2>
             <p><strong>Specs:</strong> 16GB GDDR6X, Ray Tracing</p>
             <p><strong>Pros:</strong> High performance for 4K gaming.</p>
         </div>
-        <div class="gpu-card">
-            <img src="gpu3.jpg" alt="RX 7900 XTX">
-            <h2>RX 7900 XTX</h2>
-            <p><strong>Specs:</strong> 24GB GDDR6, AMD FidelityFX</p>
-            <p><strong>Pros:</strong> Excellent price-to-performance ratio.</p>
-        </div>
-        <div class="gpu-card">
-            <img src="gpu4.jpg" alt="RTX 4070 Ti">
-            <h2>RTX 4070 Ti</h2>
-            <p><strong>Specs:</strong> 12GB GDDR6X, Ray Tracing</p>
-            <p><strong>Pros:</strong> Great balance of power & efficiency.</p>
-        </div>
-        <div class="gpu-card">
-            <img src="gpu5.jpg" alt="RX 7800 XT">
-            <h2>RX 7800 XT</h2>
-            <p><strong>Specs:</strong> 16GB GDDR6, AMD FidelityFX</p>
-            <p><strong>Pros:</strong> Budget-friendly for 1440p gaming.</p>
-        </div>
-        <div class="gpu-card">
-            <img src="gpu6.jpg" alt="RTX 4060">
-            <h2>RTX 4060</h2>
-            <p><strong>Specs:</strong> 8GB GDDR6, DLSS 3</p>
-            <p><strong>Pros:</strong> Affordable entry-level gaming GPU.</p>
-        </div>
-        <div class="gpu-card">
-            <img src="gpu7.jpg" alt="RTX 3090">
-            <h2>RTX 3090</h2>
-            <p><strong>Specs:</strong> 24GB GDDR6X, Ray Tracing</p>
-            <p><strong>Pros:</strong> Powerful for 8K gaming & AI tasks.</p>
-        </div>
-        <div class="gpu-card">
-            <img src="gpu8.jpg" alt="RX 7600">
-            <h2>RX 7600</h2>
-            <p><strong>Specs:</strong> 8GB GDDR6, AMD RDNA 3</p>
-            <p><strong>Pros:</strong> Best budget option for 1080p gaming.</p>
-        </div>
     </div>
+
+    <button id="thebutton">Highlight RTX 4090</button>
+    <button id="secondbutton">Uppercase RTX 4080</button>
+    <input type="text" id="myinput" placeholder="Enter GPU name...">
+    <button id="toggleMode">Toggle Dark Mode</button>
 </body>
 </html>
-
