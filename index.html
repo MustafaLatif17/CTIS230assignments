@@ -5,31 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Render Reviews - Home</title>
     <link rel="stylesheet" href="mystyle.css">
+    <script src="testscript.js" defer></script>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <nav>
         <a href="index.html">Home</a>
         <a href="gpus.html">List of GPUs</a>
         <a href="comparison.html">Comparisons</a>
     </nav>
 
-    <!-- Main Content -->
     <div class="container">
         <h1>Welcome to Render Reviews</h1>
-        <p>At <strong class="highlight">Render Reviews</strong>, we provide detailed reviews of GPUs, discussing their specifications, pros, and ideal use cases.</p>
+        <p id="firsttest">At <strong class="highlight">Render Reviews</strong>, we provide detailed reviews of GPUs, discussing their specifications, pros, and ideal use cases.</p>
         <p>Explore our <strong class="highlight">List of GPUs</strong> to find the best fit for your needs and check out our <strong class="highlight">Comparisons</strong> to see how they compete against each other.</p>
 
-        <!-- Floating Image Example -->
         <img src="rndr.jpg" alt="Render Reviews Logo" class="main-image float-left">
 
-
-        <!-- Flexbox Example: Box layout for showcasing categories or related content -->
         <div class="flex-container">
             <div class="flex-item">
                 <h2>GPU Reviews</h2>
-                <p>In-depth reviews of the latest GPUs, with performance benchmarks and user feedback.</p>
+                <p id="buttontest">In-depth reviews of the latest GPUs, with performance benchmarks and user feedback.</p>
             </div>
             <div class="flex-item">
                 <h2>Specifications</h2>
@@ -37,11 +32,14 @@
             </div>
             <div class="flex-item">
                 <h2>Usage Scenarios</h2>
-                <p>Find the perfect GPU for gaming, video rendering, and more based on your needs.</p>
+                <p id="secondtest">Find the perfect GPU for gaming, video rendering, and more based on your needs.</p>
             </div>
         </div>
 
+        <button id="thebutton">Change Text Color</button>
+        <button id="secondbutton">Uppercase Text</button>
+        <input type="text" id="myinput" placeholder="Enter new text...">
+        <button id="toggleMode">Toggle Dark Mode</button>
     </div>
-
 </body>
 </html>
