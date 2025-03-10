@@ -5,23 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Render Reviews - GPU Comparisons</title>
     <link rel="stylesheet" href="mystyle.css">
+    <script src="testscript.js" defer></script>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav>
         <a href="index.html">Home</a>
         <a href="gpus.html">List of GPUs</a>
         <a href="comparison.html">Comparisons</a>
     </nav>
 
-    <!-- Comparison Content -->
     <div class="comparison-container">
         <h1>GPU Comparisons</h1>
-        <p><strong>RTX 4090 vs. RTX 4080:</strong> If budget isn't an issue, the RTX 4090 is superior for rendering and AI tasks, but the 4080 offers better value for 4K gaming.</p>
-        <p><strong>RX 7900 XTX vs. RTX 4080:</strong> The 7900 XTX has better raw performance in rasterization, but the 4080 leads in ray tracing and DLSS technology.</p>
-        <p><strong>RTX 4070 vs. RX 7800 XT:</strong> The 4070 is more power-efficient, while the 7800 XT offers more VRAM and a lower price.</p>
+        <p id="firsttest"><strong>RTX 4090 vs. RTX 4080:</strong> If budget isn't an issue, the RTX 4090 is superior for rendering and AI tasks, but the 4080 offers better value for 4K gaming.</p>
+        <p id="buttontest"><strong>RX 7900 XTX vs. RTX 4080:</strong> The 7900 XTX has better raw performance in rasterization, but the 4080 leads in ray tracing and DLSS technology.</p>
+        <p id="secondtest"><strong>RTX 4070 vs. RX 7800 XT:</strong> The 4070 is more power-efficient, while the 7800 XT offers more VRAM and a lower price.</p>
         
-        <!-- Comparison Table -->
         <div class="comparison-table">
             <h2>Detailed GPU Comparison</h2>
             <table>
@@ -52,7 +50,11 @@
                 </tr>
             </table>
         </div>
-    </div>
 
+        <button id="thebutton">Highlight RX 7900 XTX</button>
+        <button id="secondbutton">Uppercase RTX 4070</button>
+        <input type="text" id="myinput" placeholder="Enter comparison details...">
+        <button id="toggleMode">Toggle Dark Mode</button>
+    </div>
 </body>
 </html>
