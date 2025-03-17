@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 .thumbnail, .gpu-image {
-    width: 150px;
+    width: 90px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
