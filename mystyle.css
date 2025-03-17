@@ -67,28 +67,54 @@ nav a:hover {
     margin: 10px;
 }
 
-.gpu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.gpu-card {
-    background: #ffffff;
-    padding: 15px;
-    width: 300px;
-    box-shadow: 0px 0px 10px gray;
+.thumbnail-section {
     text-align: center;
-    border-radius: 10px;
+    margin: 20px auto;
 }
 
-.gpu-card img {
+.thumbnail, .gpu-image {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail.expanded, .gpu-image.expanded {
+    width: 90%;
+    max-width: 600px;
+}
+
+.comparison-table table {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.comparison-table th, .comparison-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.comparison-table th {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.comparison-gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.comparison-gallery .gpu-image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .cta {
@@ -129,4 +155,36 @@ footer {
     color: white;
     margin-top: 20px;
     border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .feature-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 90%;
+    }
+
+    .comparison-gallery .gpu-image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (orientation: portrait) {
+    .hero-image {
+        max-width: 80%;
+    }
+}
+
+@media (orientation: landscape) {
+    .hero-image {
+        max-width: 60%;
+    }
 }
