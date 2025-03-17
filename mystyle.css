@@ -73,14 +73,14 @@ nav a:hover {
 }
 
 .thumbnail, .gpu-image {
-    width: 90px;
+    width: 50px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .thumbnail.expanded, .gpu-image.expanded {
-    width: 90%;
-    max-width: 600px;
+    width: 50%;
+    max-width: 60px;
 }
 
 .comparison-table table {
