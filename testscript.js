@@ -1,4 +1,3 @@
-
 const myitem = document.getElementById("firsttest");
 
 myitem.addEventListener("click", () => {
@@ -13,7 +12,6 @@ myitem.addEventListener("mouseout", () => {
     myitem.style.fontSize = "";
     myitem.style.backgroundColor = "";
 });
-
 
 const thebutton = document.getElementById("thebutton");
 const otheritem = document.getElementById("buttontest");
@@ -37,7 +35,6 @@ if (secondButton) {
     });
 }
 
-
 const textentry = document.getElementById("myinput");
 if (textentry) {
     textentry.addEventListener("change", () => {
@@ -45,7 +42,6 @@ if (textentry) {
         otheritem.innerHTML = newText;
     });
 }
-
 
 const toggleButton = document.getElementById("toggleMode");
 const body = document.body;
@@ -55,7 +51,6 @@ if (toggleButton) {
         body.classList.toggle("dark-mode");
     });
 }
-
 
 const subscribeButton = document.getElementById("subscribeButton");
 const emailInput = document.getElementById("emailInput");
@@ -68,5 +63,12 @@ if (subscribeButton && emailInput) {
         } else {
             alert("Please enter a valid email address.");
         }
+    });
+}
+
+const thumbnail = document.getElementById("thumbnailImg");
+if (thumbnail) {
+    thumbnail.addEventListener("click", () => {
+        thumbnail.classList.toggle("expanded");
     });
 }
