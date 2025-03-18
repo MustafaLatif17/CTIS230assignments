@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Text Style Manipulation
+    // Text Style Manipulation on Click
     const myItem = document.getElementById("firsttest");
     if (myItem) {
         myItem.addEventListener("click", () => {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Update Text Dynamically
+    // Update Text Dynamically in Comparison Section
     const textEntry = document.getElementById("myinput");
     if (textEntry && otherItem) {
         textEntry.addEventListener("change", () => {
@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
         });
 
-        // Load user preference
+        // Load user preference from Local Storage
         if (localStorage.getItem("darkMode") === "true") {
             document.body.classList.add("dark-mode");
         }
     }
 
-    // Newsletter Subscription
+    // Newsletter Subscription Validation
     const subscribeButton = document.getElementById("subscribeButton");
     const emailInput = document.getElementById("emailInput");
 
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // GPU Search Functionality
+    // GPU Search Functionality for Filtering GPUs Dynamically
     const searchBar = document.getElementById("searchBar");
     if (searchBar) {
         searchBar.addEventListener("keyup", () => {
