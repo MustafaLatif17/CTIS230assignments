@@ -1,5 +1,6 @@
-// Change text style on click
 document.addEventListener("DOMContentLoaded", () => {
+
+    // Text Style Manipulation
     const myItem = document.getElementById("firsttest");
     if (myItem) {
         myItem.addEventListener("click", () => {
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Button interactions
+    // Button Interactions
     const theButton = document.getElementById("thebutton");
     const otherItem = document.getElementById("buttontest");
 
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Update text dynamically
+    // Update Text Dynamically
     const textEntry = document.getElementById("myinput");
     if (textEntry && otherItem) {
         textEntry.addEventListener("change", () => {
@@ -47,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Dark Mode Toggle
+    // Dark Mode Toggle with Local Storage
     const toggleButton = document.getElementById("toggleMode");
     if (toggleButton) {
         toggleButton.addEventListener("click", () => {
@@ -76,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Expandable GPU Images (Lightbox Effect)
+    // Expandable GPU Images (Thumbnail Expansion)
     const images = document.querySelectorAll(".expandable");
     images.forEach((img) => {
         img.addEventListener("click", () => {
@@ -84,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // GPU Search Function
+    // GPU Search Functionality
     const searchBar = document.getElementById("searchBar");
     if (searchBar) {
         searchBar.addEventListener("keyup", () => {
