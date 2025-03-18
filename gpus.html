@@ -12,12 +12,17 @@
         <a href="index.html">Home</a>
         <a href="gpus.html">List of GPUs</a>
         <a href="comparison.html">Comparisons</a>
+        <button id="toggleMode">🌙 Dark Mode</button>
     </nav>
 
     <header>
         <h1>List of GPUs</h1>
         <p id="firsttest">Here are some of the best GPUs along with their specifications and advantages.</p>
     </header>
+
+    <div class="gpu-search">
+        <input type="text" id="searchBar" placeholder="Search GPUs..." onkeyup="searchGPUs()">
+    </div>
 
     <section class="gpu-container">
         <div class="gpu-card" id="buttontest">
