@@ -12,10 +12,11 @@
         <a href="index.html">Home</a>
         <a href="gpus.html">List of GPUs</a>
         <a href="comparison.html">Comparisons</a>
+        <button id="toggleMode">🌙 Dark Mode</button>
     </nav>
 
-    <header>
-        <h1>Welcome to Render Reviews</h1>
+    <header class="animated-header">
+        <h1>Welcome to <span class="highlight">Render Reviews</span></h1>
         <p>Your ultimate destination for expert GPU reviews, benchmarks, and comparisons.</p>
     </header>
 
@@ -29,14 +30,17 @@
         
         <div class="feature-section">
             <div class="feature-card">
+                <img src="expert.png" alt="Expert Reviews" class="feature-icon">
                 <h3>Expert Reviews</h3>
                 <p>Unbiased reviews based on real-world performance and extensive testing.</p>
             </div>
             <div class="feature-card">
+                <img src="benchmark.png" alt="Benchmarks" class="feature-icon">
                 <h3>Benchmarks</h3>
                 <p>Compare GPUs side-by-side with real gaming and rendering performance metrics.</p>
             </div>
             <div class="feature-card">
+                <img src="buying.png" alt="Buying Guide" class="feature-icon">
                 <h3>Buying Guides</h3>
                 <p>Find the best GPU for your needs with our in-depth comparison charts.</p>
             </div>
@@ -53,8 +57,10 @@
     <section class="cta">
         <h2>Stay Updated</h2>
         <p>Subscribe to our newsletter for the latest GPU news and updates.</p>
-        <input type="email" id="emailInput" placeholder="Enter your email">
-        <button id="subscribeButton">Subscribe</button>
+        <div class="cta-form">
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <button id="subscribeButton">Subscribe</button>
+        </div>
     </section>
 
     <footer>
