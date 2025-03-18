@@ -242,9 +242,21 @@ footer {
         width: 90%;
     }
 
-    .comparison-gallery .gpu-image-container {
+    .gpu-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .gpu-card {
+        width: 90%;
+    }
+
+    .comparison-table table {
+        font-size: 14px;
+    }
+
+    .thumbnail {
+        width: 150px; /* Adjusted for smaller screens */
     }
 }
 
