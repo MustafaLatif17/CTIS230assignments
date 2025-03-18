@@ -121,15 +121,21 @@ nav button:hover {
     transform: scale(1.1);
 }
 
-/* Image Lightbox Effect */
-.expandable {
-    cursor: pointer;
+/* Thumbnail Styling (Smaller & Consistent) */
+.thumbnail-container {
+    text-align: center;
+    margin: 20px auto;
 }
 
-.expandable.expanded {
-    width: 80%;
-    max-width: 500px;
-    transition: width 0.3s ease-in-out;
+.thumbnail {
+    width: 200px;  /* Adjusted to be smaller */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
 }
 
 /* Comparison Table */
