@@ -20,26 +20,67 @@
         <p>Compare top GPUs side-by-side to make the best purchasing decision.</p>
     </header>
 
+    <section class="comparison-container">
+        <h2>Key Comparisons</h2>
+        <p id="firsttest"><strong>RTX 4090 vs. RTX 4080:</strong> If budget isn't an issue, the RTX 4090 is superior for rendering and AI tasks, but the 4080 offers better value for 4K gaming.</p>
+        <p id="buttontest"><strong>RX 7900 XTX vs. RTX 4080:</strong> The 7900 XTX has better raw performance in rasterization, but the 4080 leads in ray tracing and DLSS technology.</p>
+        <p id="secondtest"><strong>RTX 4070 vs. RX 7800 XT:</strong> The 4070 is more power-efficient, while the 7800 XT offers more VRAM and a lower price.</p>
+    </section>
+
     <section class="comparison-table">
         <h2>Detailed GPU Comparison</h2>
+        
+        <!-- Dropdown to filter GPUs -->
+        <label for="gpuSelect">Select a GPU to compare:</label>
+        <select id="gpuSelect">
+            <option value="all">Show All</option>
+            <option value="RTX 4090">RTX 4090</option>
+            <option value="RTX 4080">RTX 4080</option>
+            <option value="RX 7900 XTX">RX 7900 XTX</option>
+            <option value="RX 7800 XT">RX 7800 XT</option>
+            <option value="RTX 4070">RTX 4070</option>
+        </select>
+
         <table>
             <tr>
                 <th>GPU Model</th>
                 <th>Specs</th>
                 <th>Pros</th>
             </tr>
-            <tr>
+            <tr class="gpu-row" data-gpu="RTX 4090">
                 <td>RTX 4090</td>
                 <td>24GB GDDR6X, Ray Tracing, DLSS 3</td>
                 <td>Best for high-end gaming & rendering</td>
             </tr>
-            <tr>
+            <tr class="gpu-row" data-gpu="RTX 4080">
                 <td>RTX 4080</td>
                 <td>16GB GDDR6X, Ray Tracing</td>
                 <td>Great value for 4K gaming</td>
             </tr>
+            <tr class="gpu-row" data-gpu="RX 7900 XTX">
+                <td>RX 7900 XTX</td>
+                <td>24GB GDDR6, AMD FidelityFX</td>
+                <td>Excellent price-to-performance ratio</td>
+            </tr>
+            <tr class="gpu-row" data-gpu="RX 7800 XT">
+                <td>RX 7800 XT</td>
+                <td>16GB GDDR6, AMD FidelityFX</td>
+                <td>Affordable for 1440p gaming</td>
+            </tr>
+            <tr class="gpu-row" data-gpu="RTX 4070">
+                <td>RTX 4070</td>
+                <td>12GB GDDR6X, Ray Tracing</td>
+                <td>Great balance of power & efficiency</td>
+            </tr>
         </table>
     </section>
+
+    <div class="controls">
+        <button id="thebutton">Highlight RX 7900 XTX</button>
+        <button id="secondbutton">Uppercase RTX 4070</button>
+        <input type="text" id="myinput" placeholder="Enter comparison details...">
+        <button id="toggleMode">Toggle Dark Mode</button>
+    </div>
 
     <footer>
         <p>&copy; 2024 Render Reviews. All rights reserved.</p>
