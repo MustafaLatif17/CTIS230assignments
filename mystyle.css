@@ -54,7 +54,7 @@ nav button:hover {
 }
 
 .hero-image {
-    max-width: 70%; /* Adjusted size */
+    max-width: 70%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -77,6 +77,11 @@ nav button:hover {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     transition: transform 0.3s ease-in-out;
+}
+
+.feature-card img {
+    width: 80px;
+    margin-bottom: 10px;
 }
 
 .feature-card:hover {
@@ -123,7 +128,7 @@ nav button:hover {
 }
 
 .thumbnail {
-    width: 200px; /* Adjusted to be smaller */
+    width: 200px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -256,7 +261,7 @@ footer {
     }
 
     .thumbnail {
-        width: 150px; /* Adjusted for smaller screens */
+        width: 150px;
     }
 }
 
